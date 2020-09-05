@@ -1,0 +1,16 @@
+body{
+	background-color: #cccccc;
+}
+div{
+	color: #ccc;
+	font: 700 80px"微软雅黑";
+}
+div:first-child{
+	text-shadow: 1px 1px 1px #000,-1px -1px 1px #fff;
+
+
+}
+div:last-child{
+	text-shadow: 1px 1px 1px #fff,-1px -1px 1px #000;
+
+}

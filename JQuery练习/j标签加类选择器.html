@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .cls{
+            background-color:red;
+        }
+    </style>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script>
+        $(function () {
+            $("#btn").click(function () {
+                $("li.cls").css("backgroundColor","black");
+            })
+        });
+    </script>
+</head>
+<body>
+<input type="button" value="请点击我" id="btn">
+<ul>
+    <li>andy</li>
+    <li class="cls">阿甘</li>
+    <li>路易</li>
+    <li class="cls">阿修罗</li>
+    <li>元素</li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        window.onload=function () {
+            var otx1=document.getElementById('tx1');
+            var otx2=document.getElementById('tx2');
+            var obtn=document.getElementById('btn');
+            
+            obtn.onclick=function () {
+//                alert(otx1.value+otx2.value)
+//                alert(parseInt(otx1.value)+parseInt(otx2.value))
+              var  num=parseInt(otx1.value)+parseInt(otx2.value);
+                if(isNaN(num)){
+                    alert('您输入有误！！！')
+                }
+                else
+                {
+                    alert(alert(parseInt(otx1.value)+parseInt(otx2.value)))
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+<input id="tx1" type="text">
+<input id="tx2" type="text">
+<input id='btn' type="button" value="求和">
+</body>
+</html>

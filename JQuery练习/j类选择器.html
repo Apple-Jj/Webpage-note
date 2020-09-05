@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .cls{
+            background-color:deeppink;
+        }
+    </style>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script>
+        $(function () {
+            $("#btn").click(function () {
+                $(".cls").css("backgroundColor","red");
+            })
+        })
+    </script>
+</head>
+<body>
+<input type="button" value="设置样式" id="btn">
+<span class="cls">这是一个span</span>
+<p class="cls">这是一个p</p>
+</body>
+</html>

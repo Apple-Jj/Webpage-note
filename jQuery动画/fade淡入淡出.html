@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #dv{
+            width: 200px;
+            height: 200px;
+            background-color:deeppink;
+        }
+    </style>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script>
+        $(function () {
+            //点击第一个按钮，滑入，slideup方法
+            $("#btn1").click(function () {
+//                $("#dv").fadeIn(1000);
+                $("#dv").fadeIn(500);
+            });
+            //点击第二个按钮，滑出，slidedown方法
+            $("#btn2").click(function () {
+                $("#dv").fadeOut(2000);
+            });
+            //点击第三个按钮，切换，slidetoggle方法
+            $("#btn3").click(function () {
+                $("#dv").fadeToggle("slow");
+            });
+            $("#btn4").click(function () {
+                $("#dv").fadeTo(1000,0.2)
+            });
+        });
+    </script>
+</head>
+<body>
+<input type="button" value="淡入" id="btn1">
+<input type="button" value="淡出" id="btn2">
+<input type="button" value="切换" id="btn3">
+<input type="button" value="改变透明度" id="btn4">
+<div id="dv"></div>
+</body>
+</html>

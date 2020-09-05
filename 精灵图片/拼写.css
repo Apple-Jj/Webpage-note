@@ -1,0 +1,21 @@
+span{
+	background: url("../img/abcd.jpg") no-repeat;
+	float: left;
+}
+span:first-child{
+	width: 102px;
+	height: 103px;
+	background-position: -254px -563px;
+
+
+}
+span:nth-child(2){
+	width: 100px;
+	height:105px;
+	background-position:-122px -12px;
+}
+span:nth-child(3){
+	width: 61px;
+	height:106px;
+	background-position:-327px -142px;
+}

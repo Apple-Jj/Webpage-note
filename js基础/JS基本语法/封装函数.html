@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #div1{
+            width: 200px;
+            height: 100px;
+            background-color: greenyellow;
+        }
+    </style>
+    <script>
+
+        function getstyle(obj,attr) {
+            if(obj.currentStyle)
+            {
+               return obj.currentStyle[attr];
+            }
+            else
+            {
+                return getComputedStyle(obj,false)[attr];
+            }
+        }
+        window.onload=function () {
+            var oDiv1=document.getElementById('div1');
+//            alert(getstyle(oDiv1,'width'));
+//            alert(getstyle(oDiv1,'background-color'));
+            alert(getstyle(oDiv1,'font-size'));
+        }
+    </script>
+</head>
+<body>
+<div id="div1">
+
+</div>
+</body>
+</html>

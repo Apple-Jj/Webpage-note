@@ -1,0 +1,50 @@
+*{
+    margin:0;
+    padding:0;
+}
+.top{
+    height: 40px;
+    background-color: #000;
+    margin-bottom:8px;
+}
+.banner{
+    height: 60px;
+    width: 1200px;
+    background-color: darkcyan;
+    margin: 0 auto;
+    margin-bottom: 8px;
+}
+.main{
+    width: 1200px;
+    height: 500px;
+    /*background-color: orangered;*/
+    margin:0 auto;
+    margin-bottom: 8px;
+}
+.left{
+    width: 300px;
+    height: 500px;
+    background-color: darkmagenta;
+    float: left;
+    margin-right: 8px;
+}
+.right{
+    width: 892px;
+    height: 500px;
+    background-color: darkblue;
+    float: left;
+}
+.footer{
+    width: 1200px;
+    height: 150px;
+    background-color: rgb(44,88,99);
+    margin:0 auto;
+}
+/*.ztp{*/
+    /*width: 60px;*/
+    /*height: 60px;*/
+/*}*/
+.mi{
+    width: 60px;
+    height: 60px;
+}

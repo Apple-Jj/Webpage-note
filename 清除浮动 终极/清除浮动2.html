@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .father{
+            width: 600px;
+            border:1px solid purple;
+            background-color:pink;
+            /*height: 150px;!*一般情况下不方便给高度*!*/
+            /*overflow: hidden; !*触发BFC的效果*!*/
+
+        }
+        .xiongda{
+            width: 200px;
+            height: 150px;
+            background-color: deeppink;
+            float: left;
+        }
+        .xionger{
+            width: 300px;
+            height: 150px;
+            background-color: deepskyblue;
+            float: left;
+        }
+        .xiaomi{
+            width: 600px;
+            height: 200px;
+            background-color: orange;
+            border:1px solid green;
+        }
+        /*xiongda 和xionger都浮动了，浮动的元素是不占有位置的，而父级元素又没有高度，此时底下的盒子就会上浮*/
+        /*清除浮动法一：额外标签法*/
+        /*.clearfix{*/
+            /*clear: both;*/
+        /*}*/
+        /*法二：在父元素后面添加overflow元素*/
+        /*法三：after伪元素清除浮动*/
+        /*.clearfix:after{*/
+            /*content: '.'; !*尽量有东西，防止旧版本有空隙*!*/
+            /*display: block;!*转换成块级元素*!*/
+            /*height: 0;*/
+            /*visibility: hidden;*/
+            /*clear: both;*/
+        /*}*/
+        /*.clearfix{*/
+            /**zoom: 1; !*专门为IE6-7准备的*!*/
+        /*}*/
+        /*法四：双伪元素来实现清除浮动*/
+        .clearfix:before,.clearfix:after{
+            content: '';
+            display: table;
+        }
+        .clearfix:after{
+            clear: both;
+        }
+        .clearfix{
+            *zoom: 1;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+<div class="father clearfix">
+    <div class="xiongda"></div>
+    <div class="xionger"></div>
+    <!--在浮动的盒子后面追加一个空盒子-->
+    <!--<div class="clearfix"></div>-->
+</div>
+<div class="xiaomi">
+
+</div>
+</body>
+</html>

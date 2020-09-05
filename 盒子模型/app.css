@@ -1,0 +1,96 @@
+/*nav{
+	height: 41px;
+	background-color: #fcfcfc;
+	border-top: 3px solid #ff9500;
+	border-bottom: 1px solid #edeef0;
+
+
+}
+nav a{
+	font-size: 14px;
+	color: #4c4c4c;
+	text-decoration: none;
+	display: inline-block;
+	height: :41px;
+	line-height: 41px;
+	padding: 0 30px;
+
+}
+
+nav a:hover{
+	background-color: #eee;
+} 
+*/
+/*盒子模型*/
+/*
+        div{
+            width: 200px;
+            height: 200px;
+            border:1px solid deeppink;
+        }
+        div:first-child{
+            border-radius: 10px;
+        }
+        div:nth-child(2){
+            /*border-radius: 200px;
+            border-radius: 50%;*/
+    /*    }
+        div:nth-child(3){
+            border-radius: 20px 40px;
+        }
+        div:nth-child(4){
+            border-radius:10px 40px 80px;
+        }
+        div:nth-child(5){
+            border-radius: 100% 0;
+        }*/
+     /* /*    外边距合并*/
+/*         div{
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+        }
+        div:first-child{
+            margin-bottom: 100px;
+        }
+        div:nth-child(2){
+            margin-top: 50px;*/
+        /*}*/
+/* 清除外边距*/
+
+        /*不同元素外边距的合并*/
+        /*div{*/
+            /*width: 200px;*/
+            /*height: 200px;*/
+            /*background-color: orange;*/
+        /*}*/
+        /*!**{*!*/
+            /*!*padding:0;*!*/
+            /*!*margin:0;*!*/
+        /*!*}*!*/
+        /*div:nth-child(2){*/
+            /*margin-bottom: 100px;*/
+        /*}*/
+        /*div:nth-child(3){*/
+            /*margin-top: 200px;*/
+        /*}*/
+
+        /*嵌套元素外边距的合并*/
+     /*   .father{
+            width: 300px;
+            height: 300px;
+            background-color: palegreen;
+            /*!*border: 1px solid green;*!法一：给边框一个宽度*/
+            /*padding:1px;法二：给父元素1个像素的内边距*/
+        /*    overflow: hidden;/*法三：利用BFC*/
+/*
+        }
+        .son{
+            width: 200px;
+            height: 200px;
+            background-color: deeppink;/*哒哒哒哒*/
+            margin-top/*: 30px;*/
+       /* }*/*
+    div{
+        background: url(shuijing.jpg);
+    }

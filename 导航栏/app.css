@@ -1,0 +1,22 @@
+body{ 
+     background-color: #000;   
+      }
+a{ 
+   width: 200px;
+   height: 50px;
+   display: inline-block;
+   text-align: center;
+   font-size: 22px;
+   line-height: 50px;
+   text-decoration: none;
+   color: #fff;
+    }
+  a:hover{ 
+        background:url(img/元素.png);
+         }  
+
+body{
+    background: url(img/元素.png);
+    background-size: cover;
+}
+

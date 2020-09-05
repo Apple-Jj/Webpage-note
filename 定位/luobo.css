@@ -1,0 +1,54 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+ul{
+    list-style:none;
+}
+ul li{
+    /*float: left;*/
+    /*display: inline-block;*/
+}
+.slider{
+    width: 520px;
+    height: 280px;
+    border:1px solid darkcyan;
+    margin:50px auto;
+    position: relative;
+}
+.arrow-l,.arrow-r{
+    width: 24px;
+    height: 36px;
+    position: absolute;
+    top:50%;
+}
+.arrow-l{
+    left:0px;
+    margin-top: -18px;
+}
+.arrow-r{
+    right: 0px;
+    margin-top: -18px;
+}
+.circle{
+    width: 65px;
+    height: 13px;
+    /*background-color: red;*/
+    background-color: rgba(255,255,255,0.3);
+    position: absolute;
+    bottom: 18px;
+    left: 50%;
+    margin-left:-22.5px;
+    border-radius: 6px;
+}
+.circle li{
+    width: 9px;
+    height: 9px;
+    background-color: #b7b7b7;
+    float: left;
+    margin: 2px;
+    border-radius: 50%;
+}
+ .circle .current{
+    background-color: orangered;
+}

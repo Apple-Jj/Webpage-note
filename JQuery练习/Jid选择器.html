@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #div1{
+            width: 200px;
+            height: 200px;
+            background-color: gold;
+        }
+    </style>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script>
+//        点击按钮，设置层中的显示内容：这是一个div，同时改变div的颜色
+//页面加载时间
+        $(function () {
+//            获取操纵对象
+            $('#btn').click(function () {
+                $("#div1").text("这是一个div");
+                $("#div1").css("backgroundColor","deeppink");
+            })
+
+        })
+    </script>
+</head>
+<body>
+<input type="button" id="btn" value="请点我">
+<div id="div1"></div>
+</body>
+</html>

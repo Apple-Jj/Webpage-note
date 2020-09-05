@@ -1,0 +1,7 @@
+注册时，在打开的License Activation窗口中选择“License server”，在输入框输入下面的网址：
+
+第一种:http://idea.codebeta.cn 
+
+第二种:http://idea.imsxm.com/
+
+点击：Activate即可。

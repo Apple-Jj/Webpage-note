@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #dv{
+            width: 200px;
+            height: 200px;
+            background-color:deeppink;
+        }
+    </style>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script>
+        $(function () {
+            $("#btnhide").click(function () {
+                //$("#dv").hide();
+                //hide()和show()有两种参数，数字型和字符型
+                //数字型如1000，表示1s，字符型，如slow，fast，normal
+                //$("#dv").hide(1000);
+                //$("#dv").hide("fast");
+                $("#dv").hide("normal");
+            });
+        });
+
+        $(function () {
+            $("#btnshow").click(function () {
+                //$("#dv").show();
+                $("#dv").show(3000);
+            });
+        });
+    </script>
+</head>
+<body>
+<input type="button" value="隐藏" id="btnhide">
+<input type="button" value="显示" id="btnshow">
+
+<div id="dv"></div>
+</body>
+</html>

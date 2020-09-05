@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #div1{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+    </style>
+    <script>
+       window.onload=function () {
+           var oDiv1=document.getElementById('div1');
+//           alert(oDiv1.style.width);  行间样式可起作用
+//           alert(oDiv1.currentStyle.width);  /*ie浏览器可起作用*/
+//           alert(getComputedStyle(oDiv1,false).width);火狐，360，谷歌可起作用
+           if(oDiv1.currentStyle)
+               {
+                   alert(oDiv1.style.width);
+               }
+           else
+               {
+                   alert(getComputedStyle(oDiv1,false).width);
+               }
+       }
+    </script>
+</head>
+<body>
+<div id="div1" >
+
+</div>
+</body>
+</html>

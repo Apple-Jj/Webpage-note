@@ -1,0 +1,24 @@
+
+span{
+	font-size: 100px;
+	transform: rotate(45deg);
+}
+.blue{
+	color: blue;
+}
+.orange{
+	color: orange;
+}
+.red{
+	color: red;
+}
+.green{
+	color: green;
+}
+.e{
+	display: inline-block;
+	transform: rotate(-15deg);
+}
+p{
+	text-align: center;
+}
